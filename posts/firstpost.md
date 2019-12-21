@@ -20,8 +20,8 @@ Capitalize on low hanging fruit to identify a ballpark value added activity to b
 ``` text/2-3
 // this is a command
 function myCommand() {
-	let counter = 0;
-	counter++;
+  let counter = 0;
+  counter++;
 }
 ```
 Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

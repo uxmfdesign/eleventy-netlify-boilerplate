@@ -7,12 +7,14 @@
 
     <header class="site__header">
       <em class="site__title">
-        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+        <a class="site__link" href="{{ '/' | url }}">
+          <img src="/_includes/assets/img/logo.svg" />
+        </a>
       </em>
       {% include "components/nav.njk" %}
     </header>
 
-    <main class="site__main">
+    <main class="site__content">
       {{ layoutContent | safe }}
     </main>
 

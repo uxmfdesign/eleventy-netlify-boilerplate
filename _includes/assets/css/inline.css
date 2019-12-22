@@ -197,7 +197,6 @@ p,
 }
 
 .site__content {
-  max-width: calc(100% - 24rem);
   width: 100%;
   padding: calc(var(--space)*2);
   margin-left: 20rem;
@@ -208,14 +207,24 @@ p,
   align-self: flex-end;
 }
 
+/* Grid */
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 /* Header */
 .site__header {
   padding: 1rem 2rem 1rem 1rem;
 }
 
 .site__title {
-  text-align: right;
-  margin-top: 0;
+  margin: 0;
+}
+
+.site__link {
+  display: block;
+  margin-bottom: var(--space);
 }
 
 .site__description {
@@ -227,6 +236,7 @@ p,
   text-align: right;
 }
 
+/* menu */
 .menu {
   display: flex;
   flex-flow: column;
@@ -276,9 +286,61 @@ p,
   left: 0;
 }
 
+/* Cards */
+.card {
+  display: flex;
+  flex-flow: column;
+  max-width: 18em;
+  width: 100%;
+}
+
+.card-link {
+  display: flex;
+  text-decoration: none;
+  flex-flow: column;
+  align-self: stretch;
+  margin: 0 var(--space) var(--space) 0;
+  color: var(--color-text-body);
+  transition: all var(--transition-timing) var(--transition-easing);
+}
+
+.card-link:hover,
+.card-link:focus {
+  color: var(--color-text-link--hover);
+  box-shadow:
+    0 19px 38px rgba(0, 0, 0, 0.3),
+    0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
 
 /* Footer */
 .site__footer {
   text-align: right;
   padding: calc(var(--space)*2);
+}
+
+/* Blog */
+.blog {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: var(--space);
+  height: 100%;
+}
+
+.blog__header {
+  width: 100%;
+}
+
+.blog__content {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.blog__title {
+  width: 100%;
+}
+
+.blog__footer {
+  width: 100%;
 }

@@ -2,6 +2,9 @@
   {% for post in postslist | reverse %}
   <a class="card card-link shadow-default" href="{{ post.url | url }}">
     <article class="blog" {% if post.url == url %} data-current="current item"{% endif %}>
+      {% if post.data.feature %}
+        <img class="img img--feature" src="{{ post.data.feature }}" />
+      {% endif %}
       <header class="blog__header">
         <h3 class="title_h3">
           {% if post.data.title %}

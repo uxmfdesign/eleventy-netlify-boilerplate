@@ -386,3 +386,13 @@ p,
 .blog__footer {
   width: 100%;
 }
+
+/* Images */
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.img--feature {
+
+}
